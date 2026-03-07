@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhenSpace — Your day, unmessed.</title>
+  <meta name="description" content="WhenSpace unifies your tasks, events, and habits into one calm, focused space. Built for people who want less noise and more done." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+          },
+          letterSpacing: {
+            tightest: '-0.04em',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom fine-grained styles not easily handled by Tailwind utilities */
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .feature-card:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    .feature-card:hover .card-icon {
+      stroke: #fff;
+    }
+    @keyframes fill-bar {
+      from { width: 0%; }
+      to   { width: 72%; }
+    }
+    .streak-bar {
+      animation: fill-bar 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      animation-play-state: paused;
+    }
+    .streak-bar.animate {
+      animation-play-state: running;
+    }
+  </style>
+</head>
+<body class="bg-white text-black antialiased font-sans">
+
+  <!-- ─── NAV ─────────────────────────────────────────────────────────────── -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-black/10">
+    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+      <span class="text-base font-semibold tracking-tight">WhenSpace</span>
+      <span class="text-xs font-semibold tracking-[0.15em] uppercase border border-black/20 text-black/40 px-3 py-1.5">
+        Coming Soon
+      </span>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────────────────── -->
+  <section class="hero-grid min-h-screen flex flex-col items-center justify-center text-center px-5 pt-14">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-6">Personal productivity</p>
+      <h1 class="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tightest leading-none mb-6">
+        Your day,<br/>unmessed.
+      </h1>
+      <p class="text-lg sm:text-xl text-black/60 max-w-xl mx-auto leading-relaxed mb-10">
+        WhenSpace brings your tasks, events, and habits into a single calm space —
+        no clutter, no overwhelm. Just clarity on what matters today.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" id="download">
+        <div class="inline-flex items-center gap-3 border border-black/15 px-6 py-3.5">
+          <!-- Android icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="text-black/30">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+          <span class="text-sm text-black/40">Android</span>
+          <span class="text-xs font-semibold tracking-[0.12em] uppercase bg-black text-white px-2 py-0.5">Soon</span>
+        </div>
+        <a href="#features" class="text-sm font-medium text-black/50 hover:text-black transition-colors duration-150 underline underline-offset-4">
+          See what's inside ↓
+        </a>
+      </div>
+    </div>
+
+    <!-- Decorative stats strip -->
+    <div class="absolute bottom-10 left-0 right-0 hidden sm:flex justify-center gap-12 text-center">
+      <div>
+        <p class="text-2xl font-bold">3-in-1</p>
+        <p class="text-xs text-black/40 tracking-wide uppercase mt-1">Tasks · Events · Habits</p>
+      </div>
+      <div class="border-l border-black/10"></div>
+      <div>
+        <p class="text-2xl font-bold">66</p>
+        <p class="text-xs text-black/40 tracking-wide uppercase mt-1">Days to a real habit</p>
+      </div>
+      <div class="border-l border-black/10"></div>
+      <div>
+        <p class="text-2xl font-bold">0</p>
+        <p class="text-xs text-black/40 tracking-wide uppercase mt-1">Subscriptions required</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURES ─────────────────────────────────────────────────────────── -->
+  <section id="features" class="py-24 px-5 border-t border-black/10">
+    <div class="max-w-6xl mx-auto">
+
+      <div class="mb-14">
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-3">Features</p>
+        <h2 class="text-4xl sm:text-5xl font-bold tracking-tightest">Everything you need.<br/>Nothing you don't.</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-black/10 border border-black/10">
+
+        <!-- Card 1 — Today View -->
+        <div class="feature-card group bg-white p-7 cursor-default transition-colors duration-150">
+          <svg class="card-icon mb-5" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <h3 class="text-base font-semibold mb-2">Today View</h3>
+          <p class="text-sm text-black/55 group-hover:text-white/70 leading-relaxed transition-colors duration-150">
+            One screen for your whole day — tasks, events, and habits, together. Overdue items surface automatically so nothing slips through.
+          </p>
+        </div>
+
+        <!-- Card 2 — Smart Tasks -->
+        <div class="feature-card group bg-white p-7 cursor-default transition-colors duration-150">
+          <svg class="card-icon mb-5" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+          <h3 class="text-base font-semibold mb-2">Smart Tasks</h3>
+          <p class="text-sm text-black/55 group-hover:text-white/70 leading-relaxed transition-colors duration-150">
+            Three task types: simple check-offs, checklists with subtasks, and ordered step-by-step flows. Each surfaces exactly what you need to act on now.
+          </p>
+        </div>
+
+        <!-- Card 3 — Events -->
+        <div class="feature-card group bg-white p-7 cursor-default transition-colors duration-150">
+          <svg class="card-icon mb-5" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <h3 class="text-base font-semibold mb-2">Scheduled Events</h3>
+          <p class="text-sm text-black/55 group-hover:text-white/70 leading-relaxed transition-colors duration-150">
+            Add time-bound events to any day. They appear alongside your tasks in the today view and on your weekly or monthly schedule.
+          </p>
+        </div>
+
+        <!-- Card 4 — Plan / Schedule -->
+        <div class="feature-card group bg-white p-7 cursor-default transition-colors duration-150">
+          <svg class="card-icon mb-5" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          <h3 class="text-base font-semibold mb-2">Week · Month · Someday</h3>
+          <p class="text-sm text-black/55 group-hover:text-white/70 leading-relaxed transition-colors duration-150">
+            Switch between a 7-day week view, a sparse month view showing only days with items, and a Someday bucket for ideas without a deadline.
+          </p>
+        </div>
+
+        <!-- Card 5 — Recurring -->
+        <div class="feature-card group bg-white p-7 cursor-default transition-colors duration-150">
+          <svg class="card-icon mb-5" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+          </svg>
+          <h3 class="text-base font-semibold mb-2">Recurring Items</h3>
+          <p class="text-sm text-black/55 group-hover:text-white/70 leading-relaxed transition-colors duration-150">
+            Set any task or event to repeat on a custom interval — daily, weekly, every two months. Each occurrence is tracked independently.
+          </p>
+        </div>
+
+        <!-- Card 6 — Reschedule -->
+        <div class="feature-card group bg-white p-7 cursor-default transition-colors duration-150">
+          <svg class="card-icon mb-5" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/>
+          </svg>
+          <h3 class="text-base font-semibold mb-2">Reschedule Overdue</h3>
+          <p class="text-sm text-black/55 group-hover:text-white/70 leading-relaxed transition-colors duration-150">
+            A dedicated triage screen gathers every overdue task. Move them to today, tomorrow, or a custom date — one tap at a time.
+          </p>
+        </div>
+
+        <!-- Card 7 — Habits -->
+        <div class="feature-card group bg-white p-7 cursor-default transition-colors duration-150">
+          <svg class="card-icon mb-5" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/>
+          </svg>
+          <h3 class="text-base font-semibold mb-2">Habit Tracking</h3>
+          <p class="text-sm text-black/55 group-hover:text-white/70 leading-relaxed transition-colors duration-150">
+            Three habit modes — check-in, count (with custom units), and timed sessions. A 66-day streak bar shows your progress toward making it automatic.
+          </p>
+        </div>
+
+        <!-- Card 8 — Trash / Restore -->
+        <div class="feature-card group bg-white p-7 cursor-default transition-colors duration-150">
+          <svg class="card-icon mb-5" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/>
+          </svg>
+          <h3 class="text-base font-semibold mb-2">Trash &amp; Restore</h3>
+          <p class="text-sm text-black/55 group-hover:text-white/70 leading-relaxed transition-colors duration-150">
+            Deleted tasks, events, and habits are soft-deleted and recoverable. Auto-purge after 7, 14, or 30 days — your call.
+          </p>
+        </div>
+
+        <!-- Card 9 — All Clear -->
+        <div class="feature-card group bg-white p-7 cursor-default transition-colors duration-150">
+          <svg class="card-icon mb-5" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>
+          </svg>
+          <h3 class="text-base font-semibold mb-2">"All Clear" State</h3>
+          <p class="text-sm text-black/55 group-hover:text-white/70 leading-relaxed transition-colors duration-150">
+            When every task, habit, and event is done for the day, WhenSpace celebrates you — and optionally surfaces your Someday ideas to keep momentum.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HABIT SPOTLIGHT ───────────────────────────────────────────────────── -->
+  <section class="bg-black text-white py-24 px-5">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Text -->
+      <div>
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-white/40 mb-4">Habit engine</p>
+        <h2 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
+          Build habits<br/>that actually stick.
+        </h2>
+        <p class="text-base text-white/60 leading-relaxed mb-6">
+          Research suggests it takes around <strong class="text-white">66 days</strong> to form a lasting habit. WhenSpace keeps a visual streak bar tracking your progress toward that milestone — not to stress you out, but to show how far you've already come.
+        </p>
+        <ul class="space-y-3 text-sm text-white/60">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-white text-xs">✓</span>
+            <span><strong class="text-white">Check-in habits</strong> — one tap marks the day done</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-white text-xs">✓</span>
+            <span><strong class="text-white">Count habits</strong> — track glasses of water, pages read, reps done</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-white text-xs">✓</span>
+            <span><strong class="text-white">Duration habits</strong> — hit start, stop when done, sessions accumulate</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-white text-xs">✓</span>
+            <span><strong class="text-white">Archive on mastery</strong> — once you hit your streak target, the habit is marked mastered and filed away</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Visual mock -->
+      <div class="flex flex-col gap-5 border border-white/10 p-8">
+
+        <!-- Habit row mock -->
+        <div id="habit-mock" class="flex flex-col gap-5">
+
+          <!-- Habit 1 — Check-in -->
+          <div class="flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center flex-shrink-0">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div class="min-w-0">
+                <p class="text-sm font-medium truncate">Morning journal</p>
+                <p class="text-xs text-white/40">Every day</p>
+              </div>
+            </div>
+            <div class="w-7 h-7 border border-white/30 bg-white flex-shrink-0"></div>
+          </div>
+
+          <!-- Streak bar for habit 1 -->
+          <div>
+            <div class="flex justify-between text-xs text-white/40 mb-1.5">
+              <span>Streak</span><span>48 of 66 days</span>
+            </div>
+            <div class="h-1.5 bg-white/10 w-full">
+              <div class="streak-bar h-full bg-white" style="width:0%"></div>
+            </div>
+          </div>
+
+          <div class="border-t border-white/10"></div>
+
+          <!-- Habit 2 — Count -->
+          <div class="flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center flex-shrink-0">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              </div>
+              <div class="min-w-0">
+                <p class="text-sm font-medium truncate">Drink water</p>
+                <p class="text-xs text-white/40">Every day · 8 glasses</p>
+              </div>
+            </div>
+            <!-- Count tiles -->
+            <div class="flex gap-1 flex-shrink-0">
+              <div class="w-5 h-5 bg-white"></div>
+              <div class="w-5 h-5 bg-white"></div>
+              <div class="w-5 h-5 bg-white"></div>
+              <div class="w-5 h-5 bg-white"></div>
+              <div class="w-5 h-5 bg-white/20"></div>
+              <div class="w-5 h-5 bg-white/20"></div>
+              <div class="w-5 h-5 bg-white/20"></div>
+              <div class="w-5 h-5 bg-white/20"></div>
+            </div>
+          </div>
+
+          <!-- Streak bar for habit 2 -->
+          <div>
+            <div class="flex justify-between text-xs text-white/40 mb-1.5">
+              <span>Streak</span><span>21 of 66 days</span>
+            </div>
+            <div class="h-1.5 bg-white/10 w-full">
+              <div class="h-full bg-white/70" style="width:32%"></div>
+            </div>
+          </div>
+
+          <div class="border-t border-white/10"></div>
+
+          <!-- Habit 3 — Duration -->
+          <div class="flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center flex-shrink-0">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <div class="min-w-0">
+                <p class="text-sm font-medium truncate">Evening run</p>
+                <p class="text-xs text-white/40">Every day · 30 min</p>
+              </div>
+            </div>
+            <button class="text-xs border border-white/30 px-3 py-1 hover:bg-white hover:text-black transition-colors duration-150">Start</button>
+          </div>
+
+          <!-- Streak bar for habit 3 -->
+          <div>
+            <div class="flex justify-between text-xs text-white/40 mb-1.5">
+              <span>Streak</span><span>66 of 66 days · Mastered</span>
+            </div>
+            <div class="h-1.5 bg-white/10 w-full">
+              <div class="h-full bg-white" style="width:100%"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Completion history dots -->
+        <div class="mt-2">
+          <p class="text-xs text-white/40 mb-2 uppercase tracking-widest">Last 30 days</p>
+          <div class="flex flex-wrap gap-1.5">
+            <!-- 30 completion circles -->
+            <script>
+              const states = [1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,2];
+              document.write(states.map(s => {
+                const cls = s === 1 ? 'bg-white' : s === 2 ? 'bg-white/20 border border-white/20' : 'bg-white/10';
+                return `<div class="w-4 h-4 ${cls}"></div>`;
+              }).join(''));
+            </script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FINAL CTA ─────────────────────────────────────────────────────────── -->
+  <section class="py-24 px-5 border-t border-black/10 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-4xl sm:text-5xl font-bold tracking-tightest mb-5">Ready to unmess your day?</h2>
+      <p class="text-base text-black/55 mb-10 leading-relaxed">
+        WhenSpace is coming soon to Android. Stay tuned — a focused, calm productivity app is on its way to your phone.
+      </p>
+      <div class="inline-flex items-center gap-4 border border-black/15 px-8 py-4">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="text-black/30">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+        <span class="text-sm text-black/50">Available on Android</span>
+        <span class="text-xs font-semibold tracking-[0.12em] uppercase bg-black text-white px-2.5 py-1">Coming Soon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────────────── -->
+  <footer class="border-t border-black/10 py-8 px-5">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-black/40">
+      <span>© 2026 WhenSpace. All rights reserved.</span>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-black transition-colors duration-150">Privacy Policy</a>
+        <a href="#" class="hover:text-black transition-colors duration-150">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── SCRIPTS ───────────────────────────────────────────────────────────── -->
+  <script>
+    // Trigger streak bar animation when section scrolls into view
+    const bar = document.querySelector('.streak-bar');
+    if (bar && 'IntersectionObserver' in window) {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            bar.classList.add('animate');
+            obs.disconnect();
+          }
+        });
+      }, { threshold: 0.3 });
+      obs.observe(document.getElementById('habit-mock'));
+    } else if (bar) {
+      bar.classList.add('animate');
+    }
+  </script>
+</body>
+</html>
