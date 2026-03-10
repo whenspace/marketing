@@ -15,15 +15,6 @@
     try { localStorage.setItem(CONSENT_KEY, value); } catch (e) {}
   }
 
-  function loadAnalytics() {
-    // Guard against double-loading
-    if (document.querySelector('script[src*="simpleanalyticscdn"]')) return;
-    var s = document.createElement('script');
-    s.defer = true;
-    s.src = 'https://scripts.simpleanalyticscdn.com/latest.js';
-    document.head.appendChild(s);
-  }
-
   function hideBanner() {
     var el = document.getElementById('cookie-banner');
     if (el) el.classList.add('hidden');
@@ -35,14 +26,14 @@
   }
 
   function init() {
-    var consent = getConsent();
-    if (consent === 'granted') {
-      loadAnalytics();
-    } else if (consent === null) {
-      // No decision yet — show the banner
-      showBanner();
-    }
-    // 'denied' → do nothing, banner stays hidden
+    // Cookie banner is temporarily disabled.
+    // To re-enable consent flow, uncomment the block below:
+    // var consent = getConsent();
+    // if (consent === 'granted') {
+    //   loadAnalytics();
+    // } else if (consent === null) {
+    //   showBanner();
+    // }
   }
 
   // ─── Public API ────────────────────────────────────────────────────────────
@@ -50,7 +41,6 @@
     acceptCookies: function () {
       setConsent('granted');
       hideBanner();
-      loadAnalytics();
     },
     declineCookies: function () {
       setConsent('denied');
