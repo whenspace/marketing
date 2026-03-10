@@ -22,26 +22,7 @@
       }
     }
   </script>
-  <style>
-    /* Custom fine-grained styles not easily handled by Tailwind utilities */
-    .hero-grid {
-      background-image:
-        linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
-    @keyframes fill-bar {
-      from { width: 0%; }
-      to   { width: 72%; }
-    }
-    .streak-bar {
-      animation: fill-bar 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-      animation-play-state: paused;
-    }
-    .streak-bar.animate {
-      animation-play-state: running;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body class="bg-white text-black antialiased font-sans">
 
@@ -482,8 +463,8 @@
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-black/40">
       <span>© 2026 WhenSpace. All rights reserved.</span>
       <div class="flex gap-6">
-        <a href="#" class="hover:text-black transition-colors duration-150">Privacy Policy</a>
-        <a href="#" class="hover:text-black transition-colors duration-150">Contact</a>
+        <a href="privacy.html" class="hover:text-black transition-colors duration-150">Privacy Policy</a>
+        <a href="contact.html" class="hover:text-black transition-colors duration-150">Contact</a>
       </div>
     </div>
   </footer>
