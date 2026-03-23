@@ -9,19 +9,57 @@
     linear-gradient(rgba(0,0,0,0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
   background-size: 40px 40px;
+  position: relative;
 }
 
-/* ─── Habit streak bar animation ─────────────────────────────────────────── */
-@keyframes fill-bar {
-  from { width: 0%; }
-  to   { width: 72%; }
+/* ─── Marketing screenshot framing ───────────────────────────────────────── */
+.device-shell {
+  position: relative;
+  padding: 14px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(245,245,245,0.92));
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.08),
+    0 10px 24px rgba(0,0,0,0.04);
 }
-.streak-bar {
-  animation: fill-bar 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-  animation-play-state: paused;
+
+.device-shell::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+  pointer-events: none;
 }
-.streak-bar.animate {
-  animation-play-state: running;
+
+.device-shell-dark {
+  border-color: rgba(255,255,255,0.12);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.45),
+    0 10px 24px rgba(0,0,0,0.2);
+}
+
+.device-shell-dark::before {
+  border-color: rgba(255,255,255,0.08);
+}
+
+.device-screen {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.hero-shot {
+  transform: rotate(2deg);
+}
+
+@media (max-width: 1023px) {
+  .hero-shot {
+    transform: none;
+  }
 }
 
 /* ─── Inner page prose ───────────────────────────────────────────────────── */

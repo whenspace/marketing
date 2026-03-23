@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WhenSpace — Your day, unmessed.</title>
-  <meta name="description" content="WhenSpace unifies your tasks, events, and habits into one calm, focused space. Built for people who want less noise and more done." />
+  <title>WhenSpace — One place for everything you need to do today.</title>
+  <meta name="description" content="WhenSpace brings tasks, events, and habits together in one calm place so your day is ready the moment you open the app." />
   <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
   <link rel="icon" type="image/png" href="assets/icon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -37,213 +37,116 @@
   </header>
 
   <!-- ─── HERO ─────────────────────────────────────────────────────────────── -->
-  <section class="hero-grid min-h-screen flex flex-col items-center justify-center text-center px-5 pt-14">
-    <div class="max-w-3xl mx-auto">
-      <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-6">Personal productivity</p>
-      <h1 class="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tightest leading-none mb-6">
-        Your day,<br/>unmessed.
-      </h1>
-      <p class="text-lg sm:text-xl text-black/60 max-w-xl mx-auto leading-relaxed mb-10">
-        WhenSpace™ brings your tasks, events, and habits into a single calm space —
-        no clutter, no overwhelm. Just clarity on what matters today.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" id="download">
-        <div class="inline-flex items-center gap-3 border border-black/15 px-6 py-3.5">
-          <!-- iOS icon -->
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="text-black/30">
-            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>
-          </svg>
-          <span class="text-sm text-black/40">iOS</span>
-          <span class="text-xs font-semibold tracking-[0.12em] uppercase bg-black text-white px-2 py-0.5">Soon</span>
+  <section class="hero-grid px-5 pt-28 pb-16 sm:pt-32 sm:pb-24">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-16 items-center">
+      <div>
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-6">Tasks · Events · Habits</p>
+        <h1 class="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tightest leading-none mb-6">
+          One place for<br/>everything you need<br/>to do today.
+        </h1>
+        <p class="text-lg sm:text-xl text-black/60 max-w-2xl leading-relaxed mb-10">
+          Tasks, events, and habits — brought together so nothing falls through the cracks.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-10" id="download">
+          <div class="inline-flex items-center gap-3 border border-black/15 px-6 py-3.5 bg-white/80">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="text-black/30">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+            <span class="text-sm text-black/40">iOS</span>
+            <span class="text-xs font-semibold tracking-[0.12em] uppercase bg-black text-white px-2 py-0.5">Soon</span>
+          </div>
+          <a href="#features" class="text-sm font-medium text-black/50 hover:text-black transition-colors duration-150 underline underline-offset-4">
+            See what your day looks like ↓
+          </a>
         </div>
-        <a href="#features" class="text-sm font-medium text-black/50 hover:text-black transition-colors duration-150 underline underline-offset-4">
-          See what's inside ↓
-        </a>
-      </div>
-    </div>
 
-    <!-- Decorative stats strip -->
-    <div class="absolute bottom-10 left-0 right-0 hidden sm:flex justify-center gap-12 text-center">
-      <div>
-        <p class="text-2xl font-bold">3-in-1</p>
-        <p class="text-xs text-black/40 tracking-wide uppercase mt-1">Tasks · Events · Habits</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+          <div class="border border-black/10 bg-white/80 px-5 py-4">
+            <p class="text-2xl font-bold mb-1">1 list</p>
+            <p class="text-black/45 uppercase tracking-[0.14em] text-[11px]">Today is ready</p>
+          </div>
+          <div class="border border-black/10 bg-white/80 px-5 py-4">
+            <p class="text-2xl font-bold mb-1">66</p>
+            <p class="text-black/45 uppercase tracking-[0.14em] text-[11px]">Days to stick</p>
+          </div>
+          <div class="border border-black/10 bg-white/80 px-5 py-4">
+            <p class="text-2xl font-bold mb-1">Someday</p>
+            <p class="text-black/45 uppercase tracking-[0.14em] text-[11px]">Always nearby</p>
+          </div>
+        </div>
       </div>
-      <div class="border-l border-black/10"></div>
-      <div>
-        <p class="text-2xl font-bold">66</p>
-        <p class="text-xs text-black/40 tracking-wide uppercase mt-1">Days to a real habit</p>
-      </div>
-      <div class="border-l border-black/10"></div>
-      <div>
-        <p class="text-2xl font-bold">0</p>
-        <p class="text-xs text-black/40 tracking-wide uppercase mt-1">Subscriptions required</p>
+
+      <div class="device-shell hero-shot max-w-[420px] mx-auto lg:mx-0 lg:ml-auto">
+        <img src="assets/screenshots/hero.png" alt="WhenSpace app showing a calm overview of today" class="device-screen" />
       </div>
     </div>
   </section>
 
   <!-- ─── FEATURES ─────────────────────────────────────────────────────────── -->
   <section id="features" class="border-t border-black/10">
-    <!-- Feature 1 — Today View -->
+    <!-- Feature 1 — Today -->
     <div class="border-t border-black/10 py-24 px-5">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        <!-- Text -->
         <div>
-          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Today View</p>
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Today</p>
           <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
-            Your whole day,<br/>at a glance.
+            Your day,<br/>already figured out.
           </h3>
           <p class="text-base text-black/60 leading-relaxed mb-6">
-            One focused screen brings together your tasks, events, and habits for the day. Overdue items surface automatically so nothing slips through the cracks.
+            Open the app and your day is ready. Tasks due today, events coming up, habits to keep — one list, no setup.
           </p>
           <ul class="space-y-3 text-sm text-black/55">
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Tasks, events &amp; habits</strong> — all unified in a single daily view</span>
+              <span><strong class="text-black">Everything due today</strong> — tasks, events, and habits in one clear list</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Overdue surfacing</strong> — past-due items rise to the top automatically</span>
+              <span><strong class="text-black">No setup required</strong> — the app works out what matters before you do</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Zero noise</strong> — only what's relevant to today, nothing more</span>
+              <span><strong class="text-black">Someday suggestions</strong> — finish early and WhenSpace quietly surfaces what could be next</span>
             </li>
           </ul>
         </div>
 
-        <!-- Placeholder visual -->
-        <div class="border border-black/10 bg-black/[0.02] aspect-[9/16] max-h-[540px] w-full flex items-center justify-center">
-          <div class="text-center text-black/20">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-3" aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>
-            </svg>
-            <p class="text-xs tracking-[0.15em] uppercase">Screenshot coming soon</p>
-          </div>
+        <div class="device-shell max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
+          <img src="assets/screenshots/today.png" alt="WhenSpace Today view showing tasks, events, and habits together" class="device-screen" />
         </div>
 
       </div>
     </div>
 
-    <!-- Feature 2 — Schedule View -->
+    <!-- Feature 2 — Tasks -->
     <div class="border-t border-black/10 py-24 px-5 bg-black/[0.015]">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        <!-- Placeholder visual (left on desktop) -->
-        <div class="border border-black/10 bg-white aspect-[9/16] max-h-[540px] w-full flex items-center justify-center order-last lg:order-first">
-          <div class="text-center text-black/20">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-3" aria-hidden="true">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-            </svg>
-            <p class="text-xs tracking-[0.15em] uppercase">Screenshot coming soon</p>
-          </div>
+        <div class="device-shell max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
+          <img src="assets/screenshots/home.png" alt="WhenSpace task details showing flexible task structures" class="device-screen" />
         </div>
 
-        <!-- Text -->
-        <div>
-          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Schedule View</p>
-          <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
-            Plan ahead<br/>without the noise.
-          </h3>
-          <p class="text-base text-black/60 leading-relaxed mb-6">
-            See your week or month at a glance. A sparse month view shows only days that have items — no empty squares cluttering the picture. Park ideas without a date in the Someday bucket.
-          </p>
-          <ul class="space-y-3 text-sm text-black/55">
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">7-day week view</strong> — scroll forward or back with ease</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Sparse month view</strong> — only days with items are shown</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Someday bucket</strong> — capture ideas without forcing a date</span>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Feature 3 — Tasks -->
-    <div class="border-t border-black/10 py-24 px-5">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-        <!-- Text -->
         <div>
           <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Tasks</p>
           <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
-            Three types.<br/>One clear action.
+            Flexible enough for<br/>how you actually think.
           </h3>
           <p class="text-base text-black/60 leading-relaxed mb-6">
-            Not all tasks are equal. WhenSpace offers three task types so what you see always tells you exactly what to do next — no ambiguity, no friction.
+            Some things need steps. Some need checklists. Some just need a day. Tasks in WhenSpace adapt to the work instead of forcing everything into one format.
           </p>
           <ul class="space-y-3 text-sm text-black/55">
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Simple check-off</strong> — one tap and it's done</span>
+              <span><strong class="text-black">Ordered steps</strong> — show the next action when a project needs sequence</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Checklist</strong> — subtasks that can be ticked off in any order</span>
+              <span><strong class="text-black">Checklists</strong> — track every item when order does not matter</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Step-by-step flow</strong> — ordered steps where only the current one is shown</span>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Placeholder visual -->
-        <div class="border border-black/10 bg-black/[0.02] aspect-[9/16] max-h-[540px] w-full flex items-center justify-center">
-          <div class="text-center text-black/20">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-3" aria-hidden="true">
-              <polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-            </svg>
-            <p class="text-xs tracking-[0.15em] uppercase">Screenshot coming soon</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Feature 4 — Events -->
-    <div class="border-t border-black/10 py-24 px-5 bg-black/[0.015]">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-        <!-- Placeholder visual (left on desktop) -->
-        <div class="border border-black/10 bg-white aspect-[9/16] max-h-[540px] w-full flex items-center justify-center order-last lg:order-first">
-          <div class="text-center text-black/20">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-3" aria-hidden="true">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-            </svg>
-            <p class="text-xs tracking-[0.15em] uppercase">Screenshot coming soon</p>
-          </div>
-        </div>
-
-        <!-- Text -->
-        <div>
-          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Events</p>
-          <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
-            Time-bound,<br/>always in context.
-          </h3>
-          <p class="text-base text-black/60 leading-relaxed mb-6">
-            Add timed events to any day and they slot right into your view alongside tasks and habits. No separate calendar app needed — everything lives in one place.
-          </p>
-          <ul class="space-y-3 text-sm text-black/55">
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Start &amp; end times</strong> — pin events to specific time slots</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Unified daily view</strong> — events sit beside tasks and habits, not in a separate app</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Visible on schedule</strong> — appear in week and month views too</span>
+              <span><strong class="text-black">Someday tasks</strong> — park ideas with no date until you are ready</span>
             </li>
           </ul>
         </div>
@@ -251,43 +154,106 @@
       </div>
     </div>
 
-    <!-- Feature 5 — Recurring Items -->
+    <!-- Feature 3 — Reschedule -->
     <div class="border-t border-black/10 py-24 px-5">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        <!-- Text -->
         <div>
-          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Recurring Items</p>
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Reschedule</p>
           <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
-            Set it once.<br/>Never forget again.
+            Yesterday's leftovers,<br/>handled in seconds.
           </h3>
           <p class="text-base text-black/60 leading-relaxed mb-6">
-            Any task or event can repeat on a custom schedule. Each occurrence is tracked independently — completing one day never affects another.
+            Did not finish everything? A quick swipe moves it to today or tomorrow. Pick a date, or delete it — it only takes a moment to start fresh.
           </p>
           <ul class="space-y-3 text-sm text-black/55">
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Flexible intervals</strong> — daily, weekly, monthly, or any custom cadence</span>
+              <span><strong class="text-black">Quick swipe actions</strong> — move unfinished items without opening extra screens</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Independent occurrences</strong> — each instance is its own item to check off</span>
+              <span><strong class="text-black">Today or tomorrow</strong> — the common choices are available instantly</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Tasks &amp; events</strong> — recurring works for both</span>
+              <span><strong class="text-black">Fresh-start control</strong> — choose a new date or clear the item entirely</span>
             </li>
           </ul>
         </div>
 
-        <!-- Placeholder visual -->
-        <div class="border border-black/10 bg-black/[0.02] aspect-[9/16] max-h-[540px] w-full flex items-center justify-center">
-          <div class="text-center text-black/20">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-3" aria-hidden="true">
-              <polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>
-            </svg>
-            <p class="text-xs tracking-[0.15em] uppercase">Screenshot coming soon</p>
-          </div>
+        <div class="device-shell max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
+          <img src="assets/screenshots/reschedule.png" alt="WhenSpace reschedule actions for unfinished tasks" class="device-screen" />
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Feature 4 — Plan -->
+    <div class="border-t border-black/10 py-24 px-5 bg-black/[0.015]">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <div class="device-shell max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
+          <img src="assets/screenshots/plan.png" alt="WhenSpace planning views for week and month" class="device-screen" />
+        </div>
+
+        <div>
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Plan</p>
+          <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
+            See the week. See the month.<br/>See what's coming.
+          </h3>
+          <p class="text-base text-black/60 leading-relaxed mb-6">
+            Switch between week and month view to get the perspective you need. Events sit alongside tasks so you always know what is on.
+          </p>
+          <ul class="space-y-3 text-sm text-black/55">
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
+              <span><strong class="text-black">Week and month views</strong> — switch context without losing your place</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
+              <span><strong class="text-black">Tasks beside events</strong> — plans stay realistic because everything shares the same space</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
+              <span><strong class="text-black">Built-in reminders</strong> — useful nudges without needing another calendar app</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Feature 5 — Habits -->
+    <div class="border-t border-white/10 py-24 px-5 bg-black text-white">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <div>
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-white/40 mb-4">Habits</p>
+          <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
+            Build habits<br/>that actually stick.
+          </h3>
+          <p class="text-base text-white/60 leading-relaxed mb-6">
+            Track time, count reps, or simply check in. Habits show their full history as a dot grid, while your streak grows in real time toward the point where the habit starts to hold.
+          </p>
+          <ul class="space-y-3 text-sm text-white/60">
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-xs text-white">✓</span>
+              <span><strong class="text-white">Multiple habit types</strong> — time, count, or simple completion</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-xs text-white">✓</span>
+              <span><strong class="text-white">Dot-grid history</strong> — see every completed window and every miss</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-xs text-white">✓</span>
+              <span><strong class="text-white">Live streak target</strong> — know when the habit has truly taken hold</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="device-shell device-shell-dark max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
+          <img src="assets/screenshots/habits.png" alt="WhenSpace habits screen with streaks and history" class="device-screen" />
         </div>
 
       </div>
@@ -295,148 +261,36 @@
 
   </section>
 
-  <!-- ─── HABIT SPOTLIGHT ───────────────────────────────────────────────────── -->
-  <section class="bg-black text-white py-24 px-5">
+  <!-- ─── MASTERED ─────────────────────────────────────────────────────────── -->
+  <section class="py-24 px-5 border-t border-black/10">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-      <!-- Text -->
-      <div>
-        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-white/40 mb-4">Habit engine</p>
-        <h2 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
-          Build habits<br/>that actually stick.
-        </h2>
-        <p class="text-base text-white/60 leading-relaxed mb-6">
-          Research suggests it takes around <strong class="text-white">66 days</strong> to form a lasting habit. WhenSpace keeps a visual streak bar tracking your progress toward that milestone — not to stress you out, but to show how far you've already come.
-        </p>
-        <ul class="space-y-3 text-sm text-white/60">
-          <li class="flex items-start gap-3">
-            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-white text-xs">✓</span>
-            <span><strong class="text-white">Check-in habits</strong> — one tap marks the day done</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-white text-xs">✓</span>
-            <span><strong class="text-white">Count habits</strong> — track glasses of water, pages read, reps done</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-white text-xs">✓</span>
-            <span><strong class="text-white">Duration habits</strong> — hit start, stop when done, sessions accumulate</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-white/20 flex items-center justify-center text-white text-xs">✓</span>
-            <span><strong class="text-white">Archive on mastery</strong> — once you hit your streak target, the habit is marked mastered and filed away</span>
-          </li>
-        </ul>
+      <div class="device-shell max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
+        <img src="assets/screenshots/mastered.png" alt="WhenSpace mastered habits screen showing maintenance check-ins" class="device-screen" />
       </div>
 
-      <!-- Visual mock -->
-      <div class="flex flex-col gap-5 border border-white/10 p-8">
-
-        <!-- Habit row mock -->
-        <div id="habit-mock" class="flex flex-col gap-5">
-
-          <!-- Habit 1 — Check-in -->
-          <div class="flex items-center justify-between gap-4">
-            <div class="flex items-center gap-3 min-w-0">
-              <div class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center flex-shrink-0">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div class="min-w-0">
-                <p class="text-sm font-medium truncate">Morning journal</p>
-                <p class="text-xs text-white/40">Every day</p>
-              </div>
-            </div>
-            <div class="w-7 h-7 border border-white/30 bg-white flex-shrink-0"></div>
-          </div>
-
-          <!-- Streak bar for habit 1 -->
-          <div>
-            <div class="flex justify-between text-xs text-white/40 mb-1.5">
-              <span>Streak</span><span>48 of 66 days</span>
-            </div>
-            <div class="h-1.5 bg-white/10 w-full">
-              <div class="streak-bar h-full bg-white" style="width:0%"></div>
-            </div>
-          </div>
-
-          <div class="border-t border-white/10"></div>
-
-          <!-- Habit 2 — Count -->
-          <div class="flex items-center justify-between gap-4">
-            <div class="flex items-center gap-3 min-w-0">
-              <div class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center flex-shrink-0">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-              </div>
-              <div class="min-w-0">
-                <p class="text-sm font-medium truncate">Drink water</p>
-                <p class="text-xs text-white/40">Every day · 8 glasses</p>
-              </div>
-            </div>
-            <!-- Count tiles -->
-            <div class="flex gap-1 flex-shrink-0">
-              <div class="w-5 h-5 bg-white"></div>
-              <div class="w-5 h-5 bg-white"></div>
-              <div class="w-5 h-5 bg-white"></div>
-              <div class="w-5 h-5 bg-white"></div>
-              <div class="w-5 h-5 bg-white/20"></div>
-              <div class="w-5 h-5 bg-white/20"></div>
-              <div class="w-5 h-5 bg-white/20"></div>
-              <div class="w-5 h-5 bg-white/20"></div>
-            </div>
-          </div>
-
-          <!-- Streak bar for habit 2 -->
-          <div>
-            <div class="flex justify-between text-xs text-white/40 mb-1.5">
-              <span>Streak</span><span>21 of 66 days</span>
-            </div>
-            <div class="h-1.5 bg-white/10 w-full">
-              <div class="h-full bg-white/70" style="width:32%"></div>
-            </div>
-          </div>
-
-          <div class="border-t border-white/10"></div>
-
-          <!-- Habit 3 — Duration -->
-          <div class="flex items-center justify-between gap-4">
-            <div class="flex items-center gap-3 min-w-0">
-              <div class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center flex-shrink-0">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-              </div>
-              <div class="min-w-0">
-                <p class="text-sm font-medium truncate">Evening run</p>
-                <p class="text-xs text-white/40">Every day · 30 min</p>
-              </div>
-            </div>
-            <button class="text-xs border border-white/30 px-3 py-1 hover:bg-white hover:text-black transition-colors duration-150">Start</button>
-          </div>
-
-          <!-- Streak bar for habit 3 -->
-          <div>
-            <div class="flex justify-between text-xs text-white/40 mb-1.5">
-              <span>Streak</span><span>66 of 66 days · Mastered</span>
-            </div>
-            <div class="h-1.5 bg-white/10 w-full">
-              <div class="h-full bg-white" style="width:100%"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Completion history dots -->
-        <div class="mt-2">
-          <p class="text-xs text-white/40 mb-2 uppercase tracking-widest">Last 30 days</p>
-          <div class="flex flex-wrap gap-1.5">
-            <!-- 30 completion circles -->
-            <script>
-              const states = [1,1,1,0,1,1,1,1,0,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,2];
-              document.write(states.map(s => {
-                const cls = s === 1 ? 'bg-white' : s === 2 ? 'bg-white/20 border border-white/20' : 'bg-white/10';
-                return `<div class="w-4 h-4 ${cls}"></div>`;
-              }).join(''));
-            </script>
-          </div>
-        </div>
-
+      <div>
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Mastered</p>
+        <h2 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
+          Mastered doesn't<br/>mean finished.
+        </h2>
+        <p class="text-base text-black/60 leading-relaxed mb-6">
+          When your streak hits the target, the habit graduates. WhenSpace checks in now and then — still doing it? Confirm and move on. If it slips, a short re-establishment series helps you get back on track.
+        </p>
+        <ul class="space-y-3 text-sm text-black/55">
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
+            <span><strong class="text-black">Graduates automatically</strong> — habits leave the main list once the target is reached</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
+            <span><strong class="text-black">Lightweight check-ins</strong> — confirm the habit still holds without daily noise</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
+            <span><strong class="text-black">Easy restart path</strong> — re-establish the habit quickly if life gets in the way</span>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -444,9 +298,9 @@
   <!-- ─── FINAL CTA ─────────────────────────────────────────────────────────── -->
   <section class="py-24 px-5 border-t border-black/10 text-center">
     <div class="max-w-2xl mx-auto">
-      <h2 class="text-4xl sm:text-5xl font-bold tracking-tightest mb-5">Ready to unmess your day?</h2>
+      <h2 class="text-4xl sm:text-5xl font-bold tracking-tightest mb-5">Ready for a calmer today?</h2>
       <p class="text-base text-black/55 mb-10 leading-relaxed">
-        WhenSpace is coming soon to iOS. Stay tuned — a focused, calm productivity app is on its way to your phone.
+        WhenSpace is coming soon to iOS. One place for tasks, events, and habits is almost here.
       </p>
       <div class="inline-flex items-center gap-4 border border-black/15 px-8 py-4">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="text-black/30">
@@ -469,25 +323,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- ─── SCRIPTS ───────────────────────────────────────────────────────────── -->
-  <script>
-    // Trigger streak bar animation when section scrolls into view
-    const bar = document.querySelector('.streak-bar');
-    if (bar && 'IntersectionObserver' in window) {
-      const obs = new IntersectionObserver(entries => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            bar.classList.add('animate');
-            obs.disconnect();
-          }
-        });
-      }, { threshold: 0.3 });
-      obs.observe(document.getElementById('habit-mock'));
-    } else if (bar) {
-      bar.classList.add('animate');
-    }
-  </script>
 
   <!-- ─── COOKIE BANNER ────────────────────────────────────────────────────── -->
   <div id="cookie-banner" class="hidden fixed bottom-0 inset-x-0 z-50 border-t border-black/10 bg-white/95 backdrop-blur">
