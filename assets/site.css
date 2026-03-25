@@ -41,6 +41,21 @@
   }
 }
 
+/* Hero phone at bottom-right — shows top 60% of phone, bottom extends beyond section */
+.hero-phone-bottom {
+  width: 100%;
+  overflow: hidden;
+  max-width: 400px;
+  /* aspect-ratio locks height to 60% of the 1257×2540 phone screenshot */
+  aspect-ratio: 1257 / 1524;
+  filter: drop-shadow(0 -20px 60px rgba(0,0,0,0.12));
+}
+
+.hero-phone-bottom img {
+  width: 100%;
+  display: block;
+}
+
 /* Crop a full-height phone screenshot to show only the top 60% */
 .screenshot-crop-top {
   overflow: hidden;

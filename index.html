@@ -8,7 +8,7 @@
   <link rel="icon" type="image/x-icon" href="/assets/icon.ico" />
   <link rel="icon" type="image/png" href="/assets/icon.png" />
   <link rel="preconnect" href="https://cdn.tailwindcss.com" />
-  <link rel="preload" as="image" href="assets/screenshots/today-hero.png" />
+  <link rel="preload" as="image" href="assets/screenshots/today.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -36,9 +36,9 @@
   </header> -->
 
   <!-- ─── HERO ─────────────────────────────────────────────────────────────── -->
-  <section class="hero-grid px-5 pt-28 pb-16 sm:pt-32 sm:pb-24">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-16 items-center">
-      <div>
+  <section class="hero-grid px-5 pt-28 pb-0 sm:pt-32 overflow-hidden">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 items-end">
+      <div class="pb-14 lg:pb-20">
         <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-6">Tasks · Events · Habits</p>
         <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tightest leading-none mb-6">
          Your day, </br> unmessed.
@@ -59,44 +59,44 @@
         </a>
       </div>
 
-      <div class="device-shell hero-shot max-w-[300px] hidden sm:block mx-auto lg:mx-0 lg:ml-auto">
-        <img src="assets/screenshots/today-hero.png" alt="WhenSpace app showing a calm overview of today" class="device-screen" width="1257" height="2540" fetchpriority="high" />
+      <div class="hero-phone-bottom">
+        <img src="assets/screenshots/today.png" alt="WhenSpace app showing a calm overview of today" class="w-full block" width="1257" height="2540" fetchpriority="high" />
       </div>
     </div>
   </section>
 
   <!-- ─── FEATURES ─────────────────────────────────────────────────────────── -->
   <section id="features" class="border-t border-black/10">
-    <!-- Feature 1 — Today -->
+    <!-- Feature 1 — Plan -->
     <div class="border-t border-black/10 py-24 px-5">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         <div class="device-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
           <div class="screenshot-crop-top">
-            <img src="assets/screenshots/today.png" alt="WhenSpace Today view showing tasks, events, and habits together" class="device-screen" width="1257" height="2540" loading="lazy" decoding="async" />
+            <img src="assets/screenshots/plan.png" alt="WhenSpace planning views for week and month" class="device-screen" width="1257" height="2540" loading="lazy" decoding="async" />
           </div>
         </div>
 
         <div>
-          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Today</p>
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Plan</p>
           <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
-            Your day,<br/>already figured out.
+            See the week. See the month.<br/>See what's coming.
           </h3>
           <p class="text-base text-black/60 leading-relaxed mb-6">
-            Open the app and your day is ready. Tasks due today, events coming up, habits to keep — one list, no setup. When you finish everything, WhenSpace quietly suggests something from your Someday list. Because done shouldn't mean idle.
+            Switch between week and month view to get the perspective you need. Events sit alongside tasks so you always know what's on, and reminders make sure you're never caught off guard.
           </p>
           <ul class="space-y-3 text-sm text-black/55">
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Everything due today</strong> — tasks, events, and habits in one clear list</span>
+              <span><strong class="text-black">Week and month views</strong> — switch context without losing your place</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">No setup required</strong> — the app works out what matters before you do</span>
+              <span><strong class="text-black">Tasks beside events</strong> — plans stay realistic because everything shares the same space</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Someday suggestions</strong> — finish early and WhenSpace quietly surfaces what could be next</span>
+              <span><strong class="text-black">Built-in reminders</strong> — useful nudges without needing another calendar app</span>
             </li>
           </ul>
         </div>
@@ -139,48 +139,15 @@
       </div>
     </div>
 
-    <!-- Feature 3 — Plan -->
+    <!-- Feature 3 — Habits -->
     <div class="border-t border-black/10 py-24 px-5">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        <div class="device-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
-          <div class="screenshot-crop-top">
-            <img src="assets/screenshots/plan.png" alt="WhenSpace planning views for week and month" class="device-screen" width="1257" height="2540" loading="lazy" decoding="async" />
-          </div>
+        <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
+          <img src="assets/screenshots/habit_types_collage.png" alt="WhenSpace habit types showing time, count, and check-in styles" class="device-screen" width="540" height="472" loading="lazy" decoding="async" />
         </div>
 
-        <div>
-          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Plan</p>
-          <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
-            See the week. See the month.<br/>See what's coming.
-          </h3>
-          <p class="text-base text-black/60 leading-relaxed mb-6">
-            Switch between week and month view to get the perspective you need. Events sit alongside tasks so you always know what's on, and reminders make sure you're never caught off guard.
-          </p>
-          <ul class="space-y-3 text-sm text-black/55">
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Week and month views</strong> — switch context without losing your place</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Tasks beside events</strong> — plans stay realistic because everything shares the same space</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Built-in reminders</strong> — useful nudges without needing another calendar app</span>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Feature 4 — Habits -->
-    <div class="border-t border-black/10 py-24 px-5 bg-black/[0.015]">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-        <div>
+        <div class="order-first lg:order-last">
           <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Habits</p>
           <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
             Build habits<br/>that actually stick.
@@ -204,10 +171,6 @@
           </ul>
         </div>
 
-        <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
-          <img src="assets/screenshots/habit_types_collage.png" alt="WhenSpace habit types showing time, count, and check-in styles" class="device-screen" width="540" height="472" loading="lazy" decoding="async" />
-        </div>
-
       </div>
     </div>
 
@@ -216,10 +179,6 @@
   <!-- ─── MASTERED ─────────────────────────────────────────────────────────── -->
   <section class="py-24 px-5 border-t border-black/10">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-      <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
-        <img src="assets/screenshots/checkin_cards.png" alt="WhenSpace mastered habits showing maintenance check-in cards" class="device-screen" width="660" height="572" loading="lazy" decoding="async" />
-      </div>
 
       <div>
         <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Mastered</p>
@@ -243,6 +202,10 @@
             <span><strong class="text-black">Easy restart path</strong> — re-establish the habit quickly if life gets in the way</span>
           </li>
         </ul>
+      </div>
+
+      <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
+        <img src="assets/screenshots/checkin_cards.png" alt="WhenSpace mastered habits showing maintenance check-in cards" class="device-screen" width="660" height="572" loading="lazy" decoding="async" />
       </div>
 
     </div>
