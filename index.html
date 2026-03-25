@@ -7,6 +7,8 @@
   <meta name="description" content="WhenSpace brings tasks, events, and habits together in one calm place so your day is ready the moment you open the app." />
   <link rel="icon" type="image/x-icon" href="/assets/icon.ico" />
   <link rel="icon" type="image/png" href="/assets/icon.png" />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preload" as="image" href="assets/screenshots/today-hero.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -58,7 +60,7 @@
       </div>
 
       <div class="device-shell hero-shot max-w-[300px] hidden sm:block mx-auto lg:mx-0 lg:ml-auto">
-        <img src="assets/screenshots/today-hero.png" alt="WhenSpace app showing a calm overview of today" class="device-screen" />
+        <img src="assets/screenshots/today-hero.png" alt="WhenSpace app showing a calm overview of today" class="device-screen" width="1257" height="2540" fetchpriority="high" />
       </div>
     </div>
   </section>
@@ -69,9 +71,9 @@
     <div class="border-t border-black/10 py-24 px-5">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        <div class="device-shell max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
+        <div class="device-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
           <div class="screenshot-crop-top">
-            <img src="assets/screenshots/today.png" alt="WhenSpace Today view showing tasks, events, and habits together" class="device-screen" />
+            <img src="assets/screenshots/today.png" alt="WhenSpace Today view showing tasks, events, and habits together" class="device-screen" width="1257" height="2540" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -130,8 +132,8 @@
           </ul>
         </div>
 
-        <div class="device-shell max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
-          <img src="assets/screenshots/task_types.png" alt="WhenSpace task types showing steps, checklists, and Someday tasks" class="device-screen" />
+        <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
+          <img src="assets/screenshots/task_types.png" alt="WhenSpace task types showing steps, checklists, and Someday tasks" class="device-screen" width="540" height="455" loading="lazy" decoding="async" />
         </div>
 
       </div>
@@ -141,9 +143,9 @@
     <div class="border-t border-black/10 py-24 px-5">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        <div class="device-shell max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
+        <div class="device-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
           <div class="screenshot-crop-top">
-            <img src="assets/screenshots/plan.png" alt="WhenSpace planning views for week and month" class="device-screen" />
+            <img src="assets/screenshots/plan.png" alt="WhenSpace planning views for week and month" class="device-screen" width="1257" height="2540" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -202,8 +204,8 @@
           </ul>
         </div>
 
-        <div class="device-shell max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
-          <img src="assets/screenshots/habit_types_collage.png" alt="WhenSpace habit types showing time, count, and check-in styles" class="device-screen" />
+        <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
+          <img src="assets/screenshots/habit_types_collage.png" alt="WhenSpace habit types showing time, count, and check-in styles" class="device-screen" width="540" height="472" loading="lazy" decoding="async" />
         </div>
 
       </div>
@@ -215,8 +217,8 @@
   <section class="py-24 px-5 border-t border-black/10">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-      <div class="device-shell max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
-        <img src="assets/screenshots/checkin_cards.png" alt="WhenSpace mastered habits showing maintenance check-in cards" class="device-screen" />
+      <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
+        <img src="assets/screenshots/checkin_cards.png" alt="WhenSpace mastered habits showing maintenance check-in cards" class="device-screen" width="660" height="572" loading="lazy" decoding="async" />
       </div>
 
       <div>
@@ -291,6 +293,6 @@
       </div>
     </div>
   </div>
-  <script src="assets/site.js"></script>
+  <script src="assets/site.js" defer></script>
 </body>
 </html>
