@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
   <title>WhenSpace — One place for everything you need to do today.</title>
   <meta name="description" content="WhenSpace brings tasks, events, and habits together in one calm place so your day is ready the moment you open the app." />
   <link rel="icon" type="image/x-icon" href="/assets/icon.ico" />
@@ -46,12 +47,9 @@
         <p class="text-lg sm:text-xl text-black/60 max-w-2xl leading-relaxed mb-10">
           WhenSpace™ brings your tasks, events, and habits into a single calm space — no clutter, no overwhelm. Just clarity on what matters today.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-10" id="download">
-          <a class="inline-flex items-center gap-3 border border-black/15 px-6 py-3.5 bg-black rounded-md" href="https://apple.com">
-            <span class="text-sm font-semibold text-white">Available on iOS</span>
-          </a>
-          <a class="inline-flex items-center gap-3 border border-black/15 px-6 py-3.5 bg-lime-600 rounded-md" href="https://android.com">
-            <span class="text-sm font-semibold text-white">Get it on Android</span>
+        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-10">
+          <a href="#download" class="inline-flex items-center gap-3 border border-black/15 px-6 py-3.5 bg-black rounded-md">
+            <span class="text-sm font-semibold text-white">Try it for Free</span>
           </a>
         </div>
         <a href="#features" class="text-sm font-medium text-black/50 hover:text-black transition-colors duration-150 underline underline-offset-4">
@@ -213,13 +211,14 @@
 
   <!-- ─── FINAL CTA ─────────────────────────────────────────────────────────── -->
   <section class="py-24 px-5 border-t border-black/10 text-center">
-    <div class="max-w-2xl mx-auto">
+    <div class="max-w-2xl mx-auto" id="download">
       <h2 class="text-4xl sm:text-5xl font-bold tracking-tightest mb-5">Ready for a calmer today?</h2>
       <p class="text-base text-black/55 mb-10 leading-relaxed">
-        One place for tasks, events, and habits is almost here.
+        One place for tasks, events, and habits is almost here.<br/>
+        Offline-first and private by design — your data stays on your device.
       </p>
       <div class="inline-flex items-center gap-4 px-8">
-        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-10" id="download">
+        <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-10">
           <a class="inline-flex items-center gap-3 border border-black/15 px-6 py-3.5 bg-black rounded-md" href="https://apple.com">
             <span class="text-sm font-semibold text-white">Available on iOS</span>
           </a>
