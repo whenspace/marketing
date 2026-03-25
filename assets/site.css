@@ -62,6 +62,20 @@
   }
 }
 
+/* Crop a full-height phone screenshot to show only the top 60% */
+.screenshot-crop-top {
+  overflow: hidden;
+  /* 1257 wide × 1524 tall = 60% of the 1257×2540 source images */
+  aspect-ratio: 1257 / 1524;
+}
+
+.screenshot-crop-top .device-screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
 /* ─── Inner page prose ───────────────────────────────────────────────────── */
 /* Used on Privacy Policy and similar content pages */
 .prose-page h2 {
