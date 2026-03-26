@@ -28,18 +28,10 @@
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body class="bg-white text-black antialiased font-sans">
-
-  <!-- ─── NAV ─────────────────────────────────────────────────────────────── -->
-  <!-- <header class="inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-black/10">
-    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
-      <img src="assets/logo-text-black.png" alt="WhenSpace" class="h-6" />
-    </div>
-  </header> -->
-
   <!-- ─── HERO ─────────────────────────────────────────────────────────────── -->
   <section class="hero-grid px-5 pt-28 pb-0 sm:pt-32 overflow-hidden">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 items-end">
-      <div class="pb-14 lg:pb-20">
+      <div class="md:pb-14 lg:pb-20">
         <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-6">Tasks · Events · Habits</p>
         <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tightest leading-none mb-6">
          Your day, </br> unmessed.
@@ -52,7 +44,7 @@
             <span class="text-sm font-semibold text-white">Try it for Free</span>
           </a>
         </div>
-        <a href="#features" class="text-sm font-medium text-black/50 hover:text-black transition-colors duration-150 underline underline-offset-4">
+        <a href="#features" class="hidden sm:inline-block text-sm font-medium text-black/50 hover:text-black transition-colors duration-150 underline underline-offset-4">
           See more ↓
         </a>
       </div>
@@ -65,48 +57,15 @@
 
   <!-- ─── FEATURES ─────────────────────────────────────────────────────────── -->
   <section id="features" class="border-t border-black/10">
-    <!-- Feature 1 — Plan -->
+    <!-- Feature 1 — Tasks -->
     <div class="border-t border-black/10 py-24 px-5">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        <div class="device-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
-          <div class="screenshot-crop-top">
-            <img src="assets/screenshots/plan.png" alt="WhenSpace planning views for week and month" class="device-screen" width="1257" height="2540" loading="lazy" decoding="async" />
-          </div>
+        <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
+          <img src="assets/screenshots/task_types.png" alt="WhenSpace task types showing steps, checklists, and Someday tasks" class="device-screen" width="540" height="455" loading="lazy" decoding="async" />
         </div>
 
-        <div>
-          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Plan</p>
-          <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
-            See the week. See the month.<br/>See what's coming.
-          </h3>
-          <p class="text-base text-black/60 leading-relaxed mb-6">
-            Switch between week and month view to get the perspective you need. Events sit alongside tasks so you always know what's on, and reminders make sure you're never caught off guard.
-          </p>
-          <ul class="space-y-3 text-sm text-black/55">
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Week and month views</strong> — switch context without losing your place</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Tasks beside events</strong> — plans stay realistic because everything shares the same space</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
-              <span><strong class="text-black">Built-in reminders</strong> — useful nudges without needing another calendar app</span>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Feature 2 — Tasks -->
-    <div class="border-t border-black/10 py-24 px-5 bg-black/[0.015]">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-        <div>
+        <div class="order-first lg:order-last">
           <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Tasks</p>
           <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
             Flexible enough for<br/>how you actually think.
@@ -130,8 +89,39 @@
           </ul>
         </div>
 
-        <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
-          <img src="assets/screenshots/task_types.png" alt="WhenSpace task types showing steps, checklists, and Someday tasks" class="device-screen" width="540" height="455" loading="lazy" decoding="async" />
+      </div>
+    </div>
+
+    <!-- Feature 2 — Plan -->
+    <div class="border-t border-black/10 pt-24 pb-0 px-5 overflow-hidden bg-black/[0.015]">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
+
+        <div class="sm:pb-24">
+          <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-4">Plan</p>
+          <h3 class="text-4xl sm:text-5xl font-bold tracking-tightest leading-tight mb-6">
+            See the week. See the month.<br/>See what's coming.
+          </h3>
+          <p class="text-base text-black/60 leading-relaxed mb-6">
+            Switch between week and month view to get the perspective you need. Events sit alongside tasks so you always know what's on, and reminders make sure you're never caught off guard.
+          </p>
+          <ul class="space-y-3 text-sm text-black/55">
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
+              <span><strong class="text-black">Week and month views</strong> — switch context without losing your place</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
+              <span><strong class="text-black">Tasks beside events</strong> — plans stay realistic because everything shares the same space</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 flex-shrink-0 w-5 h-5 border border-black/20 flex items-center justify-center text-xs">✓</span>
+              <span><strong class="text-black">Built-in reminders</strong> — useful nudges without needing another calendar app</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-phone-bottom max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
+          <img src="assets/screenshots/plan.png" alt="WhenSpace planning views for week and month" class="w-full block" width="1257" height="2540" loading="lazy" decoding="async" />
         </div>
 
       </div>
