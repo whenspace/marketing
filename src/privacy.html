@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — WhenSpace</title>
-  <meta name="description" content="WhenSpace Privacy Policy. Learn how we handle your data." />
-  <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
-  <link rel="icon" type="image/png" href="assets/icon.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-          },
-          letterSpacing: {
-            tightest: '-0.04em',
-          }
-        }
-      }
-    }
-  </script>
-  <link rel="stylesheet" href="/assets/site.css" />
+<!-- title: Privacy Policy — WhenSpace -->
+<!-- description: WhenSpace Privacy Policy. Learn how we handle your data. -->
+<!-- include _partials/head.html -->
 </head>
 <body class="bg-white text-black antialiased font-sans">
 
-  <!-- ─── NAV ─────────────────────────────────────────────────────────────── -->
-  <header class="inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-black/10">
-    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
-      <a href="index.html">
-        <img src="assets/logo-text-black.png" alt="WhenSpace" class="h-6" />
-      </a>
-    </div>
-  </header>
+<!-- include _partials/nav.html -->
 
   <!-- ─── PAGE HEADER ──────────────────────────────────────────────────────── -->
   <div class="pt-14">
@@ -195,32 +166,4 @@
     </div>
   </main>
 
-  <!-- ─── FOOTER ────────────────────────────────────────────────────────────── -->
-  <footer class="border-t border-black/10 py-8 px-5">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-black/40">
-      <span>© 2026 WhenSpace. All rights reserved.</span>
-      <div class="flex gap-6">
-        <a href="about.html" class="hover:text-black transition-colors duration-150">About</a>
-        <a href="privacy.html" class="hover:text-black transition-colors duration-150">Privacy Policy</a>
-        <a href="contact.html" class="hover:text-black transition-colors duration-150">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ─── COOKIE BANNER ────────────────────────────────────────────────────── -->
-  <div id="cookie-banner" class="hidden fixed bottom-0 inset-x-0 z-50 border-t border-black/10 bg-white/95 backdrop-blur">
-    <div class="max-w-6xl mx-auto px-5 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-      <p class="text-sm text-black/60 leading-relaxed max-w-xl">
-        We use analytics cookies to understand how people find WhenSpace. See our
-        <a href="cookies.html" class="underline underline-offset-2 hover:text-black transition-colors duration-150">Cookie Policy</a>.
-      </p>
-      <div class="flex gap-3 flex-shrink-0">
-        <button onclick="WS.declineCookies()" class="text-xs border border-black/20 px-4 py-2 hover:border-black transition-colors duration-150 text-black/50 hover:text-black">Decline</button>
-        <button onclick="WS.acceptCookies()" class="text-xs bg-black text-white px-4 py-2 hover:bg-black/80 transition-colors duration-150">Accept</button>
-      </div>
-    </div>
-  </div>
-  <script src="assets/site.js"></script>
-
-</body>
-</html>
+<!-- include _partials/footer.html -->

@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — WhenSpace</title>
-  <meta name="description" content="About WhenSpace — the team and legal entity behind the app." />
-  <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
-  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <title>Contact — WhenSpace</title>
+  <meta name="description" content="Get in touch with the WhenSpace team." />
+  <link rel="icon" type="image/x-icon" href="/assets/icon.ico" />
+  <link rel="icon" type="image/png" href="/assets/icon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -39,11 +40,10 @@
   <div class="pt-14">
     <div class="border-b border-black/10 py-16 px-5">
       <div class="max-w-2xl mx-auto">
-        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-3">About</p>
-        <h1 class="text-4xl sm:text-5xl font-bold tracking-tightest mb-4">WhenSpace</h1>
-        <p class="text-base text-black/55 leading-relaxed max-w-xl">
-          A focused productivity app that unifies your tasks, events, and habits into one calm space —
-          built for people who want less noise and more done.
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-3">Get in touch</p>
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-tightest mb-4">Contact</h1>
+        <p class="text-base text-black/55 leading-relaxed">
+          Questions, feedback, or just want to say hi? We'd love to hear from you.
         </p>
       </div>
     </div>
@@ -51,17 +51,16 @@
 
   <!-- ─── CONTENT ──────────────────────────────────────────────────────────── -->
   <main class="py-16 px-5">
-    <div class="max-w-2xl mx-auto prose-page">
-      <h2>Legal information</h2>
-      <p>
-        WhenSpace is developed and published by <strong class="text-black">Marcin Syngajewski</strong>.
-      </p>
+    <div class="max-w-2xl mx-auto">
 
-      <p>
-        For any legal or business enquiries, please use the <a href="contact.html">contact page</a>.
-        For data-related questions, see our <a href="privacy.html">Privacy Policy</a>.
-      </p>
-
+      <!-- Email block -->
+      <div class="border border-black/10 p-8 mb-10">
+        <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-3">Email us</p>
+        <a href="mailto:hello@whenspace.app"
+           class="text-2xl font-bold tracking-tightest hover:opacity-60 transition-opacity duration-150">
+          hello@whenspace.app
+        </a>
+      </div>
     </div>
   </main>
 
@@ -90,7 +89,6 @@
       </div>
     </div>
   </div>
-  <script src="assets/site.js"></script>
-
+  <script src="assets/site.js" defer></script>
 </body>
 </html>
