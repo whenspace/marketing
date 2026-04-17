@@ -4,7 +4,7 @@
 
 /* ── Prose / legal pages ─────────────────────────────────────────── */
 .prose-page {
-  color: rgba(0,0,0,0.75);
+  color: rgba(0, 0, 0, 0.75);
   font-size: 1rem;
   line-height: 1.8;
 }
@@ -34,7 +34,7 @@
 
 .prose-page code {
   font-size: 0.875em;
-  background: rgba(0,0,0,0.06);
+  background: rgba(0, 0, 0, 0.06);
   border-radius: 3px;
   padding: 0.1em 0.35em;
 }
@@ -45,7 +45,7 @@
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  text-decoration-color: rgba(0,0,0,0.35);
+  text-decoration-color: rgba(0, 0, 0, 0.35);
   font-weight: 500;
   transition: text-decoration-color 0.15s;
 }
