@@ -1,12 +1,16 @@
-<!-- title: Privacy Policy — WhenSpace -->
-<!-- description: WhenSpace Privacy Policy. Learn how we handle your data. -->
-<!-- include _partials/head.html -->
-</head>
-<body class="bg-white text-black antialiased font-sans">
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 
-<!-- include _partials/nav.html -->
+const title = "Privacy Policy — WhenSpace";
+const description = "WhenSpace Privacy Policy. Learn how we handle your data.";
+---
 
-  <!-- ─── PAGE HEADER ──────────────────────────────────────────────────────── -->
+<Layout title={title} description={description}>
+  <Nav />
+
+  <!-- PAGE HEADER -->
   <div class="pt-14">
     <div class="border-b border-black/10 py-16 px-5">
       <div class="max-w-2xl mx-auto">
@@ -17,7 +21,7 @@
     </div>
   </div>
 
-  <!-- ─── CONTENT ──────────────────────────────────────────────────────────── -->
+  <!-- CONTENT -->
   <main class="py-16 px-5">
     <div class="max-w-2xl mx-auto prose-page">
 
@@ -164,15 +168,16 @@
       <h2>12. Contact us</h2>
       <p>
         If you have any questions about this Privacy Policy, please reach us at
-        <a href="contact.html">our contact page</a>.
+        <a href="/contact">our contact page</a>.
       </p>
 
       <h2>13. Data controller & ownership</h2>
       <p>
         To identify the entity or individual responsible for the operation of WhenSpace, please refer to
-        <a href="about.html">our about page</a>.
+        <a href="/about">our about page</a>.
       </p>
     </div>
   </main>
 
-<!-- include _partials/footer.html -->
+  <Footer />
+</Layout>

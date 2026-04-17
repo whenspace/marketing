@@ -1,0 +1,29 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<style is:global>
+  @import '../styles/global.css';
+</style>
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/x-icon" href="/assets/icon.ico" />
+  <link rel="icon" type="image/png" href="/assets/icon.png" />
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <slot name="head" />
+</head>
+<body class="bg-white text-black antialiased font-sans">
+  <slot />
+</body>
+</html>

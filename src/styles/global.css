@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* WhenSpace Marketing Site Custom Styles */
+
+.hero-grid {
+  background:
+    radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(120, 119, 198, 0.3),
+      transparent
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.02) 100%);
+}
+
+.hero-phone-bottom {
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.03) 100%);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.device-screen {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Prose styles for privacy policy */
+.prose-page {
+  @apply space-y-6;
+}
+
+.prose-page h2 {
+  @apply text-xl font-bold text-black mt-8 mb-4;
+}
+
+.prose-page p {
+  @apply text-black/70 leading-relaxed;
+}
+
+.prose-page a {
+  @apply text-black underline hover:no-underline;
+}
+
+.prose-page ul {
+  @apply space-y-2 ml-4;
+}
+
+.prose-page li {
+  @apply text-black/70 leading-relaxed;
+}
+
+.prose-page code {
+  @apply bg-black/5 px-1 py-0.5 rounded text-sm font-mono;
+}
+
+/* Additional responsive improvements */
+@media (max-width: 640px) {
+  .hero-phone-bottom {
+    padding: 12px;
+    border-radius: 16px;
+  }
+}

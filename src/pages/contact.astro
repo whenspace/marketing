@@ -1,12 +1,16 @@
-<!-- title: Contact — WhenSpace -->
-<!-- description: Get in touch with the WhenSpace team. -->
-<!-- include _partials/head.html -->
-</head>
-<body class="bg-white text-black antialiased font-sans">
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 
-<!-- include _partials/nav.html -->
+const title = "Contact — WhenSpace";
+const description = "Get in touch with the WhenSpace team.";
+---
 
-  <!-- ─── PAGE HEADER ──────────────────────────────────────────────────────── -->
+<Layout title={title} description={description}>
+  <Nav />
+
+  <!-- PAGE HEADER -->
   <div class="pt-14">
     <div class="border-b border-black/10 py-16 px-5">
       <div class="max-w-2xl mx-auto">
@@ -19,7 +23,7 @@
     </div>
   </div>
 
-  <!-- ─── CONTENT ──────────────────────────────────────────────────────────── -->
+  <!-- CONTENT -->
   <main class="py-16 px-5">
     <div class="max-w-2xl mx-auto">
 
@@ -34,4 +38,5 @@
     </div>
   </main>
 
-<!-- include _partials/footer.html -->
+  <Footer />
+</Layout>

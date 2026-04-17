@@ -1,18 +1,23 @@
-<!-- title: WhenSpace — One place for everything you need to do today. -->
-<!-- description: WhenSpace brings tasks, events, and habits together in one calm place so your day is ready the moment you open the app. -->
-<!-- include _partials/head.html -->
-  <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
-  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
-  <link rel="preload" as="image" href="assets/screenshots/today.png" />
-</head>
-<body class="bg-white text-black antialiased font-sans">
-  <!-- ─── HERO ─────────────────────────────────────────────────────────────── -->
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "WhenSpace — One place for everything you need to do today.";
+const description = "WhenSpace brings tasks, events, and habits together in one calm place so your day is ready the moment you open the app.";
+---
+
+<Layout title={title} description={description}>
+  <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID" slot="head" />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" slot="head" />
+  <link rel="preload" as="image" href="/assets/screenshots/today.png" slot="head" />
+
+  <!-- HERO -->
   <section class="hero-grid px-5 pt-28 pb-0 sm:pt-32 overflow-hidden">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-16 items-end">
       <div class="md:pb-14 lg:pb-20">
         <p class="text-xs font-semibold tracking-[0.2em] uppercase text-black/40 mb-6">Tasks · Events · Habits</p>
         <h1 class="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tightest leading-none mb-6">
-         Your day, </br> unmessed.
+         Your day, <br/> unmessed.
         </h1>
         <p class="text-lg sm:text-xl text-black/60 max-w-2xl leading-relaxed mb-10">
           WhenSpace™ brings your tasks, events, and habits into a single calm space — no clutter, no overwhelm. Just clarity on what matters today.
@@ -28,19 +33,19 @@
       </div>
 
       <div class="hero-phone-bottom">
-        <img src="assets/screenshots/today.png" alt="WhenSpace app showing a calm overview of today" class="w-full block" width="1257" height="2540" fetchpriority="high" />
+        <img src="/assets/screenshots/today.png" alt="WhenSpace app showing a calm overview of today" class="w-full block" width="1257" height="2540" fetchpriority="high" />
       </div>
     </div>
   </section>
 
-  <!-- ─── FEATURES ─────────────────────────────────────────────────────────── -->
+  <!-- FEATURES -->
   <section id="features" class="border-t border-black/10">
     <!-- Feature 1 — Tasks -->
     <div class="border-t border-black/10 py-24 px-5">
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
-          <img src="assets/screenshots/task_types.png" alt="WhenSpace task types showing steps, checklists, and Someday tasks" class="device-screen" width="540" height="455" loading="lazy" decoding="async" />
+          <img src="/assets/screenshots/task_types.png" alt="WhenSpace task types showing steps, checklists, and Someday tasks" class="device-screen" width="540" height="455" loading="lazy" decoding="async" />
         </div>
 
         <div class="order-first lg:order-last">
@@ -99,7 +104,7 @@
         </div>
 
         <div class="hero-phone-bottom max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
-          <img src="assets/screenshots/plan.png" alt="WhenSpace planning views for week and month" class="w-full block" width="1257" height="2540" loading="lazy" decoding="async" />
+          <img src="/assets/screenshots/plan.png" alt="WhenSpace planning views for week and month" class="w-full block" width="1257" height="2540" loading="lazy" decoding="async" />
         </div>
 
       </div>
@@ -110,7 +115,7 @@
       <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
-          <img src="assets/screenshots/habit_types_collage.png" alt="WhenSpace habit types showing time, count, and check-in styles" class="device-screen" width="540" height="472" loading="lazy" decoding="async" />
+          <img src="/assets/screenshots/habit_types_collage.png" alt="WhenSpace habit types showing time, count, and check-in styles" class="device-screen" width="540" height="472" loading="lazy" decoding="async" />
         </div>
 
         <div class="order-first lg:order-last">
@@ -169,7 +174,7 @@
         </div>
 
         <div class="hero-phone-bottom max-w-[380px] mx-auto lg:mx-0 lg:ml-auto">
-          <img src="assets/screenshots/notes-index.png" alt="WhenSpace notes index showing a grid of quick-capture notes" class="w-full block" width="884" height="1698" loading="lazy" decoding="async" />
+          <img src="/assets/screenshots/notes-index.png" alt="WhenSpace notes index showing a grid of quick-capture notes" class="w-full block" width="884" height="1698" loading="lazy" decoding="async" />
         </div>
 
       </div>
@@ -177,12 +182,12 @@
 
   </section>
 
-  <!-- ─── MASTERED ─────────────────────────────────────────────────────────── -->
+  <!-- MASTERED -->
   <section class="py-24 px-5 border-t border-black/10">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
       <div class="feature-shot max-w-[380px] mx-auto lg:mx-0 order-last lg:order-first">
-        <img src="assets/screenshots/checkin_cards.png" alt="WhenSpace mastered habits showing maintenance check-in cards" class="device-screen" width="660" height="572" loading="lazy" decoding="async" />
+        <img src="/assets/screenshots/checkin_cards.png" alt="WhenSpace mastered habits showing maintenance check-in cards" class="device-screen" width="660" height="572" loading="lazy" decoding="async" />
       </div>
 
       <div class="order-first lg:order-last">
@@ -212,7 +217,7 @@
     </div>
   </section>
 
-  <!-- ─── FINAL CTA ─────────────────────────────────────────────────────────── -->
+  <!-- FINAL CTA -->
   <section class="py-24 px-5 border-t border-black/10 text-center">
     <div class="max-w-2xl mx-auto" id="download">
       <h2 class="text-4xl sm:text-5xl font-bold tracking-tightest mb-5">Ready for a calmer today?</h2>
@@ -222,9 +227,6 @@
       </p>
       <div class="inline-flex items-center gap-4 px-8">
         <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-10">
-          <!-- <a class="inline-flex items-center gap-3 border border-black/15 px-6 py-3.5 bg-black rounded-md" href="https://apple.com">
-            <span class="text-sm font-semibold text-white">Available on iOS</span>
-          </a> -->
           <a class="inline-flex items-center gap-3 border border-black/15 px-6 py-3.5 bg-lime-600 rounded-md" href="https://play.google.com/store/apps/details?id=app.whenspace.main">
             <span class="text-sm font-semibold text-white">Get it on Android</span>
           </a>
@@ -233,4 +235,5 @@
     </div>
   </section>
 
-<!-- include _partials/footer.html -->
+  <Footer />
+</Layout>
